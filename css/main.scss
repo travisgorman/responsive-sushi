@@ -1,25 +1,29 @@
 @import "variables";
 
+h4 {
+  color:$primary-color
+}
 header {
-  padding: 1em;
-  height: 14em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem;
+  height: 14rem;
   text-align: center;
   h1 {
-    font-size: 1em;
-    letter-spacing: 0.5em;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
     color: $primary-color;
     position: relative;
-    width: 10em;
-    margin: 1em auto 0 auto;
+    width: 10rem;
+    margin: 1rem auto 0 auto;
   }
     .question-mark {
       position: absolute;
-      font-size: 0.8em;
+      font-size: 0.8rem;
       bottom: 12px;
       // right: -15%;
     }
   h5 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 400;
     color: $primary-color;
     margin-bottom: 0;
@@ -32,7 +36,7 @@ header {
   li {
     list-style-type: none;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     color: $primary-color;
   }
   i {
@@ -51,8 +55,9 @@ header {
 //navigation-bar
 .navigation-bar {
   display: inline-block;
-  padding: 0 0 2em 0;
+  padding: 0 0 2rem 0;
   width: 100%;
+  //tabs
   li {
     list-style-type: none;
     float: left;
@@ -72,7 +77,7 @@ header {
       color: $primary-color;
     }
   }
-
+//icons
   i {
     font-size: 1em;
     padding: 0.75em 0 0.75em 0;
@@ -84,7 +89,7 @@ header {
 }
 
 section {
-  width: 100%;
+  width: 95%;
 }
 //menu-item
 .menu-item {
@@ -126,16 +131,13 @@ footer {
   a {
     text-decoration: none;
     color: $primary-color;
-    // &:hover {
-    //   @extend %hover-to-secondary;
-    // }
   }
 }
-
+// medium screen- two column layout
 @media screen and (min-width: 510px) {
   .menu-item {
     .item-image {
-      width: 41%;
+      width: 40%;
       float: left;
       margin: 0 3% 2em 3%;
     }
@@ -206,7 +208,7 @@ footer {
     }
   }
 }
-
+// full screen- three column layout
 @media screen and (min-width: 840px) {
   header {
     height: 9em;
@@ -215,10 +217,11 @@ footer {
       width: 49%;
       margin: 2em 0 1em 5%;
     }
-    .question-icon {
-      bottom: 12px;
-      left: 162px;
-    }
+    // .question-mark {
+    //   // position: absolute;
+    //   // bottom: -40px;
+    //   // right: 262px;
+    // }
     h5 {
       margin: 0 0 0 5%;
       width: 50%;
@@ -226,15 +229,17 @@ footer {
       float: left;
       text-align: left;
     }
+    //float icons right
     .navigation-icons {
       margin: 0 5% 0 0;
       float: right;
     }
-    header::after {
-      content:"";
-      clear: both;
-      display: block;
-    }
+     //clearfix header
+    // header::after {
+    //   content:"";
+    //   clear: both;
+    //   display: block;
+    // }
   }
 
   .menu-item {
@@ -250,6 +255,7 @@ footer {
       margin-top: 1em;
     }
   }
+  //clearfix menu-item
   .menu-item::after {
     content:"";
     clear: both;
