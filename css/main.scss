@@ -12,11 +12,11 @@ header {
     width: 10em;
     margin: 1em auto 0 auto;
   }
-    .question-icon {
+    .question-mark {
       position: absolute;
       font-size: 0.8em;
       bottom: 12px;
-      right: -13%;
+      // right: -15%;
     }
   h5 {
     font-size: 2em;
@@ -25,7 +25,7 @@ header {
     margin-bottom: 0;
   }
 }
-
+//navigation-icons
 .navigation-icons {
   display: inline-block;
   padding: 0;
@@ -36,24 +36,23 @@ header {
     color: $primary-color;
   }
   i {
-    padding: 0.5em 0.6em 0.5em 0.6em;
+    padding: 0.5rem 0.5rem 0.5rem 0.6rem;
     border: 4px solid $primary-color;
     border-radius: 50%;
   }
   .water-icon {
-    padding: 0.5em 0.73em 0.5em 0.73em;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   }
   a {
     text-decoration: none;
     color: $primary-color;
   }
 }
-
+//navigation-bar
 .navigation-bar {
   display: inline-block;
   padding: 0 0 2em 0;
   width: 100%;
-
   li {
     list-style-type: none;
     float: left;
@@ -69,13 +68,11 @@ header {
     &:last-child {
       border-right: 0;
     }
-    // &:hover {
-    //   @extend %hover-nav;
-    // }
     &:hover a {
       color: $primary-color;
     }
   }
+
   i {
     font-size: 1em;
     padding: 0.75em 0 0.75em 0;
@@ -89,22 +86,22 @@ header {
 section {
   width: 100%;
 }
-
+//menu-item
 .menu-item {
   .item-image {
-    width: 66%;
+    width: 65%;
     margin: 0 auto;
     background: $primary-color;
     text-align: center;
   }
   img {
-    width: 28%;
+    width: 25%;
     padding: 8%;
     margin: 4% 0 4% 0;
     border-radius: 50%;
     background: #fff;
   }
-  h4 {
+  h3 {
     text-align: center;
     font-size: 1.2em;
     color: $primary-color;
@@ -122,6 +119,9 @@ footer {
   margin: 8em 0 3em 0;
   span {
     color: $primary-color;
+  }
+  span.tg {
+    color: $secondary-color;
   }
   a {
     text-decoration: none;

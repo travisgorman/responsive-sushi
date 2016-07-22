@@ -9,11 +9,10 @@ header {
     position: relative;
     width: 10em;
     margin: 1em auto 0 auto; }
-  header .question-icon {
+  header .question-mark {
     position: absolute;
     font-size: 0.8em;
-    bottom: 12px;
-    right: -13%; }
+    bottom: 12px; }
   header h5 {
     font-size: 2em;
     font-weight: 400;
@@ -29,11 +28,11 @@ header {
     font-size: 1em;
     color: #47a3da; }
   .navigation-icons i {
-    padding: 0.5em 0.6em 0.5em 0.6em;
+    padding: 0.5rem 0.5rem 0.5rem 0.6rem;
     border: 4px solid #47a3da;
     border-radius: 50%; }
   .navigation-icons .water-icon {
-    padding: 0.5em 0.73em 0.5em 0.73em; }
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem; }
   .navigation-icons a {
     text-decoration: none;
     color: #47a3da; }
@@ -68,17 +67,17 @@ section {
   width: 100%; }
 
 .menu-item .item-image {
-  width: 66%;
+  width: 65%;
   margin: 0 auto;
   background: #47a3da;
   text-align: center; }
 .menu-item img {
-  width: 28%;
+  width: 25%;
   padding: 8%;
   margin: 4% 0 4% 0;
   border-radius: 50%;
   background: #fff; }
-.menu-item h4 {
+.menu-item h3 {
   text-align: center;
   font-size: 1.2em;
   color: #47a3da; }
@@ -93,6 +92,8 @@ footer {
   margin: 8em 0 3em 0; }
   footer span {
     color: #47a3da; }
+  footer span.tg {
+    color: #ccc; }
   footer a {
     text-decoration: none;
     color: #47a3da; }
